@@ -20,13 +20,13 @@ class Word {
         let divCard = document.createElement('div');
             divCard.setAttribute('class','card');
             let wordI = document.createElement('p');
-                wordI.innerHTML=`${this.word}`;
+                wordI.innerHTML=`<i>${this.word}</i>`;
             let wordD = document.createElement('p');
-                wordD.innerHTML=`Definition: ${this.definition}`;
+                wordD.innerHTML=`<b>Definition:</b> ${this.definition}`;
             let wordS = document.createElement('p');
-                wordS.innerHTML=`Sentence: ${this.sentence}`;
+                wordS.innerHTML=`<b>Sentence:</b> ${this.sentence}`;
             let wordC = document.createElement('p');
-                wordC.innerHTML=`Category: ${this.category.name}`;
+                wordC.innerHTML=`<b>Category:</b> ${this.category}`;
         divCard.append(wordI, wordC, wordD, wordS);
         divWD.innerHTML="";
         divWD.append(divCard);
@@ -40,16 +40,14 @@ class Word {
 
     renderWordInIndex() {
         let divWordList = getWordList();
-        let divCard = document.createElement('div');
-            divCard.setAttribute('class','card');
             let btn = document.createElement('button');
                 btn.setAttribute('id', this.id);
                 btn.innerText = `${this.word}`;
                 btn.setAttribute("class", "wave-effect blue lighten-3 btn-small");
                 btn.addEventListener( 'click', (e)=>{this.fetchAWord(e);});
-            divCard.appendChild(btn);
-        divWordList.append(divCard);
-        //debugger;
+        let p = document.createElement('p');
+        divWordList.append(p,btn);
+
     }
 
     static renderWords() {

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea3679b-fe79-4aab-b340-ef8661e1f78c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/app/services/word_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/app/services/word_serializer.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascripts/models/word.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/models/word.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +64,8 @@
       <updated>1586489673957</updated>
       <workItem from="1586489686311" duration="3554000" />
       <workItem from="1586563518963" duration="7751000" />
-      <workItem from="1586662589752" duration="12049000" />
+      <workItem from="1586662589752" duration="13345000" />
+      <workItem from="1586702830014" duration="856000" />
     </task>
     <servers />
   </component>
@@ -78,9 +73,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2532" y="286" width="1720" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586673193020">
+    <state x="2038" y="0" width="1720" height="840" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586705461322">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2532" y="286" width="1720" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586673193020" />
+    <state x="2038" y="0" width="1720" height="840" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586705461322" />
+    <state x="1937" y="348" width="1720" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586675987116" />
   </component>
 </project>
