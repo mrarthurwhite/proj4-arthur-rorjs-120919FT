@@ -3,14 +3,15 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = Category.all
+    categories = Category.all
 
-    render json: @categories
+    render json: CategorySerializer.new(categories).to_serialized_json
   end
 
   # GET /categories/1
   def show
-    render json: @category
+    category = Category.find_by(id: params[:id])
+    render json: CategorySerializer.new(category).to_serialized_json
   end
 
   # POST /categories

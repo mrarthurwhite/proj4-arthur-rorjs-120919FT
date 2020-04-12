@@ -7,7 +7,7 @@ class WordSerializer
   def to_serialized_json
     options = {
         :include => {
-            :category => {:only => [:id, :name]}
+            :category => {:only => [ :name]}
         },
         :except => [:updated_at, :created_at]
     }
