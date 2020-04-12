@@ -13,23 +13,27 @@
 <body>
 
 <div class="row">
-    <div class="col s12 m6 l6">
+    <div class="col s3 m3 l3 word-list">
+        <h7 class="center">List of Words</h7>
+    </div>
+    <div class="col s9 m9 l9">
         <form id="word-form" action="#">
             <div class="input-field">
-                <input type="text" name="word" id="word">
                 <label for="word">Word</label>
+                <input type="text" name="word" id="word">
             </div>
 
             <div class="input-field">
-                <input type="text" name="definition" id="definition">
                 <label for="definition">Definition</label>
+                <input type="text" name="definition" id="definition">
             </div>
 
 
             <div class="input-field">
-                <input type="text" name="category_id" id="category_id">
                 <label for="category_id">Category</label>
+                <input type="text" name="category_id" id="category_id">
             </div>
+
 
             <label for="sentence">Sentence</label>
             <div class="input-field">
@@ -39,9 +43,9 @@
             <input type="submit" value="Add a Word" class="wave-effect blue lighten-3 btn-small">
         </form>
     </div>
-    <div class="col s12 m6 l6 word-list">
-        <h7 class="center">List of Words</h7>
+    <div class="col s9 m9 l9" id="word-display">
     </div>
+
 </div>
 <script src="javascripts/index.js"></script>
 <script src="javascripts/services/api.js"></script>

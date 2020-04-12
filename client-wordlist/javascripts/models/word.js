@@ -7,7 +7,7 @@ class Word {
         this.definition = data.definition;
         this.sentence = data.sentence;
         this.category=data.category.name;
-        this.category_id=data.category.id;
+        this.category_id=data.category_id;
         this.save();
     }
 
@@ -15,25 +15,45 @@ class Word {
         Word.all.push(this);
     }
 
-    template() {
-        return `
-        <div class="card">
-          <div class="card-content">
-            <a href="#" class="card-title">${this.word}</a>
-            <p>Category: ${this.category} Word List. </p>
-            <p>Definition: ${this.definition}</p>
-            <p>Sentence: ${this.sentence} </p>
-          </div>
-        </div>
-      `
+    renderWord() {
+      let divWD=  getWordDisplay();
+        let divCard = document.createElement('div');
+            divCard.setAttribute('class','card');
+            let wordI = document.createElement('p');
+                wordI.innerHTML=`${this.word}`;
+            let wordD = document.createElement('p');
+                wordD.innerHTML=`Definition: ${this.definition}`;
+            let wordS = document.createElement('p');
+                wordS.innerHTML=`Sentence: ${this.sentence}`;
+            let wordC = document.createElement('p');
+                wordC.innerHTML=`Category: ${this.category.name}`;
+        divCard.append(wordI, wordC, wordD, wordS);
+        divWD.innerHTML="";
+        divWD.append(divCard);
     }
 
-    render() {
-        getWordList().innerHTML += this.template();
+
+    fetchAWord(e){
+        let id = e.target.id;
+        Word.getAword(id);
+    }
+
+    renderWordInIndex() {
+        let divWordList = getWordList();
+        let divCard = document.createElement('div');
+            divCard.setAttribute('class','card');
+            let btn = document.createElement('button');
+                btn.setAttribute('id', this.id);
+                btn.innerText = `${this.word}`;
+                btn.setAttribute("class", "wave-effect blue lighten-3 btn-small");
+                btn.addEventListener( 'click', (e)=>{this.fetchAWord(e);});
+            divCard.appendChild(btn);
+        divWordList.append(divCard);
+        //debugger;
     }
 
     static renderWords() {
-        Word.all.forEach(word => word.render())
+        Word.all.forEach(word => word.renderWordInIndex())
     }
 
     static createFromForm(e) {
@@ -52,16 +72,26 @@ class Word {
                 category_id: category_id
             }
         };
-debugger;
+
         API.post('/words', strongParams)
             .then(data => {
                 let word = new Word(data);
-                word.render();
+                word.renderWordInIndex();
                 resetInput();
             })
     }
 
-    static load() {
+    static getAword(id) {
+        // fetch, sends a GET request by default
+        API.get("/words/"+id)
+            .then(function (data) { // data is an array of blogs
+                let w  = new Word(data);
+                w.renderWord();
+            })
+            .catch(errors => console.log(errors));
+    }
+
+    static loadAllWords() {
         // fetch, sends a GET request by default
         API.get('/words')
             .then(function (words) { // data is an array of blogs
@@ -70,4 +100,5 @@ debugger;
             })
             .catch(errors => console.log(errors));
     }
+
 }

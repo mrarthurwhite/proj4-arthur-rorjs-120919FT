@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ef557db-c24a-43e3-a99e-73c76610cb85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/wordlist-api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1aQGbTX9G8kKFuhg3wVjO7x3p76" />
@@ -50,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586660477758</updated>
       <workItem from="1586660486447" duration="1454000" />
+      <workItem from="1586662401807" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1586660677491</created>
@@ -108,7 +110,9 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
