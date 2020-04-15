@@ -11,33 +11,29 @@ class Category {
         Category.all.push(this);
     }
 
-    template() {
-        return `
-        <div class="card">
-          <div class="card-content">
-            <p>Category: ${this.name} Word List. </p>
-          </div>
-        </div>
-      `
-    }
-
     render() {
-        getCategoriesDropDown().innerHTML += this.template();
+        let categorySelect = getCategory();
+        let o = document.createElement("option");
+            o.text = this.name;
+            o.value = this.id;
+       categorySelect.options.add(o);
+        //categorySelect.append(o);
+
     }
 
     static renderCategories() {
         Category.all.forEach(category => category.render())
     }
 
-
-
-    static load() {
+    static loadAllIntoSelect() {
         // fetch, sends a GET request by default
         API.get('/categories')
             .then(function (categories) { // data is an array of blogs
                 categories.forEach(data => new Category(data));
                 Category.renderCategories();
+                initializeSelect();
             })
             .catch(errors => console.log(errors));
     }
+
 }

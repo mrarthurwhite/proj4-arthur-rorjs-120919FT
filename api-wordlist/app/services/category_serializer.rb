@@ -5,7 +5,10 @@ class CategorySerializer
   end
 
   def to_serialized_json
-    options = {:except => [:updated_at, :created_at]}
+    options = {
+        :include => [ :words ],
+          :except => [:updated_at, :created_at]
+    };
     @category.to_json(options);
   end
 

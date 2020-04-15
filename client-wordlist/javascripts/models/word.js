@@ -47,7 +47,6 @@ class Word {
                 btn.addEventListener( 'click', (e)=>{this.fetchAWord(e);});
         let p = document.createElement('p');
         divWordList.append(p,btn);
-
     }
 
     static renderWords() {
