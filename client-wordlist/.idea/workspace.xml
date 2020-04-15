@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea3679b-fe79-4aab-b340-ef8661e1f78c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/app/services/category_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/app/services/category_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-compile-cache/f2/610e3dbe0215d6" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-compile-cache/f2/610e3dbe0215d6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-wordlist/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/tmp/pids/server.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascripts/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/models/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascripts/models/word.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/models/word.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +70,7 @@
       <workItem from="1586702830014" duration="1473000" />
       <workItem from="1586786881804" duration="3092000" />
       <workItem from="1586814861597" duration="637000" />
-      <workItem from="1586876800944" duration="11551000" />
+      <workItem from="1586876800944" duration="13590000" />
     </task>
     <servers />
   </component>

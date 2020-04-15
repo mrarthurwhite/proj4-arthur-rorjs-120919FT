@@ -75,6 +75,7 @@ class Word {
                 let word = new Word(data);
                 word.renderWordInIndex();
                 resetInput();
+                hideForm();
             })
     }
 

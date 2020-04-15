@@ -1,8 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-
+    hideForm();
     Category.loadAllIntoSelect();
-
     Word.loadAllWords(); // send an ajax call to rails to fetch all of the words
     getForm().addEventListener('submit', Word.createFromForm);
 });
@@ -13,6 +12,7 @@ function initializeSelect(){
 
 
 const getForm = () => document.getElementById("word-form");
+const getAddWordBttn = () => document.getElementById("show-form");
     const getWord = () => document.getElementById('word');
     const getDefinition = () => document.getElementById('definition');
     const getSentence = () => document.getElementById('sentence');
@@ -21,6 +21,14 @@ const getForm = () => document.getElementById("word-form");
     // display area
 const getWordList = () => document.querySelector('div.word-list');
 
+function showForm(){
+    getForm().style.display="block";
+    getAddWordBttn().style.display="none";
+}
+function hideForm(){
+    getForm().style.display="none";
+    getAddWordBttn().style.display="block";
+}
 function resetInput() {
     getWord().value = '';
     getDefinition().value = '';

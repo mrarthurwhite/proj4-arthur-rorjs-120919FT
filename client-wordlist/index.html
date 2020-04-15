@@ -23,6 +23,9 @@
         <h7 class="center">List of Words</h7>
     </div>
     <div class="col s9 m9 l4">
+        <button id="show-form"
+                class="wave-effect blue lighten-3 btn-small"
+                onclick="showForm()">Add A Word</button>
         <form id="word-form" action="#">
             <div class="input-field">
                 <label for="word">Word</label>
@@ -34,15 +37,11 @@
             </div>
             <div class="input-field">
                 <select id="category"  name="category">
-                    <option value="" disabled selected>Choose your category</option>
-
+                    <option value="" disabled selected>Select a category</option>
                 </select>
-
             </div>
-
             <div class="input-field">
                 <label for="sentence">Sentence</label>
-
                 <textarea name="sentence" id="sentence" cols="30" rows="50"></textarea>
             </div>
             <input type="submit" value="Add a Word" class="wave-effect blue lighten-3 btn-small">
