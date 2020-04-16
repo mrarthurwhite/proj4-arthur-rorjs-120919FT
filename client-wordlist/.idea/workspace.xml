@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea3679b-fe79-4aab-b340-ef8661e1f78c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../api-wordlist/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-wordlist/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-wordlist/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../api-wordlist/tmp/pids/server.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/index.js" afterDir="false" />
@@ -70,7 +74,10 @@
       <workItem from="1586702830014" duration="1473000" />
       <workItem from="1586786881804" duration="3092000" />
       <workItem from="1586814861597" duration="637000" />
-      <workItem from="1586876800944" duration="13590000" />
+      <workItem from="1586876800944" duration="13817000" />
+      <workItem from="1586972091951" duration="596000" />
+      <workItem from="1586981496373" duration="989000" />
+      <workItem from="1587050183759" duration="3973000" />
     </task>
     <servers />
   </component>

@@ -15,6 +15,7 @@ class Word {
         Word.all.push(this);
     }
 
+
     renderWord() {
       let divWD=  getWordDisplay();
         let divCard = document.createElement('div');

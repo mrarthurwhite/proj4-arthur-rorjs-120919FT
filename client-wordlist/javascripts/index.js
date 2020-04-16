@@ -21,10 +21,13 @@ const getAddWordBttn = () => document.getElementById("show-form");
     // display area
 const getWordList = () => document.querySelector('div.word-list');
 
+
 function showForm(){
     getForm().style.display="block";
     getAddWordBttn().style.display="none";
 }
+
+
 function hideForm(){
     getForm().style.display="none";
     getAddWordBttn().style.display="block";

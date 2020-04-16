@@ -45,3 +45,4 @@ Word.create(word: 'abridge',
             sentence: 'Because the publishers felt the public wanted a shorter version of War and Peace, they proceeded to abridge the novel.',
             category: Category.third
 )
+
